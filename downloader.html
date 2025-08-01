@@ -1,0 +1,290 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Unduh Audio &amp; Video TikTok dan Instagram Gratis
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <div class="bg-red-600 text-white text-center py-2 text-sm font-semibold fixed top-0 left-0 w-full z-50">
+   Website ini dibuat oleh <span class="underline">GarzZOfficial</span>
+  </div>
+  <header class="bg-white shadow-md sticky top-8 z-40">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a class="flex items-center space-x-3" href="#">
+     <img alt="Logo aplikasi unduh audio dan video TikTok dan Instagram, ikon huruf TT berwarna merah dan putih" class="w-10 h-10 rounded-md" height="40" src="https://storage.googleapis.com/a1aa/image/2a704792-4c4d-441a-ab9d-dd453ab29234.jpg" width="40"/>
+    </a>
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+     <a class="hover:text-red-600 transition" href="#unduh-audio">
+      Unduh Audio TikTok
+     </a>
+     <a class="hover:text-red-600 transition" href="#unduh-video">
+      Unduh Video TikTok &amp; Instagram
+     </a>
+     <a class="hover:text-red-600 transition" href="#cara">
+      Cara Pakai
+     </a>
+     <a class="hover:text-red-600 transition" href="#faq">
+      FAQ
+     </a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-600" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav aria-label="Mobile menu" class="md:hidden bg-white border-t border-gray-200 hidden" id="mobile-menu">
+    <a class="block px-4 py-3 text-gray-700 font-medium border-b border-gray-200 hover:bg-red-50 hover:text-red-600 transition" href="#unduh-audio">
+     Unduh Audio TikTok
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-medium border-b border-gray-200 hover:bg-red-50 hover:text-red-600 transition" href="#unduh-video">
+     Unduh Video TikTok &amp; Instagram
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-medium border-b border-gray-200 hover:bg-red-50 hover:text-red-600 transition" href="#cara">
+     Cara Pakai
+    </a>
+    <a class="block px-4 py-3 text-gray-700 font-medium hover:bg-red-50 hover:text-red-600 transition" href="#faq">
+     FAQ
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow pt-12">
+   <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center" id="unduh-audio">
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-red-600 mb-4">
+     Unduh Audio TikTok Gratis
+    </h1>
+    <p class="text-gray-700 mb-8 text-lg sm:text-xl">
+     Masukkan link video TikTok dan unduh audio-nya dengan mudah dan cepat.
+    </p>
+    <form autocomplete="off" class="flex flex-col sm:flex-row items-center justify-center gap-4" id="download-audio-form">
+     <input aria-label="Input link video TikTok untuk unduh audio" class="w-full sm:w-96 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 text-gray-900" id="tiktok-audio-url" name="tiktok-audio-url" placeholder="Tempel link video TikTok di sini" required="" type="url"/>
+     <button aria-label="Tombol unduh audio TikTok" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition" type="submit">
+      <i class="fas fa-download mr-2">
+      </i>
+      Unduh Audio
+     </button>
+    </form>
+    <p aria-live="polite" class="mt-6 text-center text-sm text-red-600 font-medium min-h-[1.5rem]" id="audio-message" role="alert">
+    </p>
+    <div aria-label="Pemutar audio hasil unduhan" class="mt-8 hidden" id="audio-player-container">
+     <audio class="mx-auto rounded-md shadow-lg" controls="" id="audio-player" preload="none">
+      Browser Anda tidak mendukung elemen audio.
+     </audio>
+     <a aria-label="Tombol unduh file audio TikTok" class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition" download="audio-tiktok.mp3" href="#" id="audio-download-link">
+      <i class="fas fa-file-audio mr-2">
+      </i>
+      Simpan Audio
+     </a>
+    </div>
+   </section>
+   <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center border-t border-gray-200" id="unduh-video">
+    <h2 class="text-4xl sm:text-5xl font-extrabold text-red-600 mb-4">
+     Unduh Video TikTok &amp; Instagram Gratis
+    </h2>
+    <p class="text-gray-700 mb-8 text-lg sm:text-xl">
+     Masukkan link video TikTok atau Instagram dan unduh videonya dengan mudah dan cepat.
+    </p>
+    <form autocomplete="off" class="flex flex-col sm:flex-row items-center justify-center gap-4" id="download-video-form">
+     <input aria-label="Input link video TikTok atau Instagram untuk unduh video" class="w-full sm:w-96 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 text-gray-900" id="video-url" name="video-url" placeholder="Tempel link video TikTok atau Instagram di sini" required="" type="url"/>
+     <button aria-label="Tombol unduh video TikTok atau Instagram" class="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition" type="submit">
+      <i class="fas fa-download mr-2">
+      </i>
+      Unduh Video
+     </button>
+    </form>
+    <p aria-live="polite" class="mt-6 text-center text-sm text-red-600 font-medium min-h-[1.5rem]" id="video-message" role="alert">
+    </p>
+    <div aria-label="Pemutar video hasil unduhan" class="mt-8 hidden" id="video-player-container">
+     <video class="mx-auto rounded-md shadow-lg max-w-full" controls="" id="video-player" preload="none" playsinline="">
+      Browser Anda tidak mendukung elemen video.
+     </video>
+     <a aria-label="Tombol unduh file video TikTok atau Instagram" class="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition" download="video.mp4" href="#" id="video-download-link">
+      <i class="fas fa-file-video mr-2">
+      </i>
+      Simpan Video
+     </a>
+    </div>
+   </section>
+   <section aria-labelledby="cara-title" class="bg-white py-16 border-t border-gray-200" id="cara">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h3 class="text-3xl font-extrabold text-red-600 mb-8 text-center" id="cara-title">
+      Cara Mengunduh Audio dan Video TikTok &amp; Instagram
+     </h3>
+     <ol class="list-decimal list-inside space-y-6 text-gray-700 text-lg max-w-3xl mx-auto">
+      <li>
+       Buka aplikasi TikTok atau Instagram, atau situs webnya, dan cari video yang ingin Anda unduh audio atau videonya.
+      </li>
+      <li>
+       Salin link video tersebut dengan menekan tombol "Bagikan" lalu pilih "Salin Link".
+      </li>
+      <li>
+       Tempel link video ke kolom input yang sesuai (Audio TikTok atau Video TikTok &amp; Instagram) dan tekan tombol "Unduh Audio" atau "Unduh Video".
+      </li>
+      <li>
+       Tunggu proses pengambilan selesai, lalu Anda bisa memutar hasil unduhan langsung di situs ini atau mengunduhnya ke perangkat Anda.
+      </li>
+      <li>
+       Gunakan hasil unduhan tersebut untuk keperluan pribadi atau konten Anda sesuai ketentuan yang berlaku.
+      </li>
+     </ol>
+    </div>
+   </section>
+   <section aria-labelledby="faq-title" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gray-50 border-t border-gray-200" id="faq">
+    <h3 class="text-3xl font-extrabold text-red-600 mb-8 text-center" id="faq-title">
+     Pertanyaan yang Sering Diajukan (FAQ)
+    </h3>
+    <div class="space-y-6 text-gray-700 max-w-3xl mx-auto">
+     <details class="border border-gray-300 rounded-md p-4">
+      <summary class="font-semibold cursor-pointer select-none">
+       Apakah layanan ini gratis?
+      </summary>
+      <p class="mt-2">
+       Ya, Anda dapat mengunduh audio dan video TikTok serta Instagram secara gratis tanpa biaya apapun.
+      </p>
+     </details>
+     <details class="border border-gray-300 rounded-md p-4">
+      <summary class="font-semibold cursor-pointer select-none">
+       Apakah saya perlu login untuk mengunduh?
+      </summary>
+      <p class="mt-2">
+       Tidak, Anda tidak perlu membuat akun atau login untuk menggunakan layanan ini.
+      </p>
+     </details>
+     <details class="border border-gray-300 rounded-md p-4">
+      <summary class="font-semibold cursor-pointer select-none">
+       Apakah kualitas audio dan video yang diunduh bagus?
+      </summary>
+      <p class="mt-2">
+       Kualitas hasil unduhan bergantung pada kualitas asli dari video TikTok atau Instagram tersebut.
+      </p>
+     </details>
+     <details class="border border-gray-300 rounded-md p-4">
+      <summary class="font-semibold cursor-pointer select-none">
+       Apakah saya boleh menggunakan hasil unduhan untuk konten saya?
+      </summary>
+      <p class="mt-2">
+       Pastikan Anda mematuhi hak cipta dan ketentuan penggunaan TikTok, Instagram, serta aturan konten yang berlaku.
+      </p>
+     </details>
+     <details class="border border-gray-300 rounded-md p-4">
+      <summary class="font-semibold cursor-pointer select-none">
+       Apakah data saya aman saat menggunakan situs ini?
+      </summary>
+      <p class="mt-2">
+       Kami tidak menyimpan data pribadi Anda. Semua proses pengunduhan dilakukan secara langsung dan sementara.
+      </p>
+     </details>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 py-8 mt-16">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-600 text-sm">
+    © 2024. Website ini dibuat oleh <span class="font-semibold text-red-600">GarzZOfficial Aman</span>. Semua hak cipta dilindungi.
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Audio download form
+    const audioForm = document.getElementById('download-audio-form');
+    const audioUrlInput = document.getElementById('tiktok-audio-url');
+    const audioMessage = document.getElementById('audio-message');
+    const audioPlayerContainer = document.getElementById('audio-player-container');
+    const audioPlayer = document.getElementById('audio-player');
+    const audioDownloadLink = document.getElementById('audio-download-link');
+
+    audioForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      audioMessage.textContent = '';
+      audioPlayerContainer.classList.add('hidden');
+      const url = audioUrlInput.value.trim();
+
+      // Basic TikTok URL validation for audio
+      const tiktokRegex = /^(https?:\/\/)?(www\.)?tiktok\.com\/.+$/i;
+      if (!tiktokRegex.test(url)) {
+        audioMessage.textContent = 'Masukkan link TikTok yang valid.';
+        return;
+      }
+
+      audioMessage.textContent = 'Memproses unduhan audio...';
+
+      try {
+        // Simulated delay
+        await new Promise((r) => setTimeout(r, 2000));
+
+        // Demo audio URL (placeholder)
+        const audioUrl =
+          'https://cdn.pixabay.com/download/audio/2022/03/23/audio_3a7a3a3a3a.mp3?filename=calm-instrumental-ambient-11047.mp3';
+
+        audioPlayer.src = audioUrl;
+        audioDownloadLink.href = audioUrl;
+        audioDownloadLink.setAttribute('download', 'audio-tiktok.mp3');
+        audioPlayerContainer.classList.remove('hidden');
+        audioMessage.textContent = 'Audio berhasil diproses. Silakan putar atau unduh.';
+      } catch (error) {
+        audioMessage.textContent =
+          'Terjadi kesalahan saat memproses audio. Silakan coba lagi.';
+      }
+    });
+
+    // Video download form
+    const videoForm = document.getElementById('download-video-form');
+    const videoUrlInput = document.getElementById('video-url');
+    const videoMessage = document.getElementById('video-message');
+    const videoPlayerContainer = document.getElementById('video-player-container');
+    const videoPlayer = document.getElementById('video-player');
+    const videoDownloadLink = document.getElementById('video-download-link');
+
+    videoForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      videoMessage.textContent = '';
+      videoPlayerContainer.classList.add('hidden');
+      const url = videoUrlInput.value.trim();
+
+      // Basic TikTok or Instagram URL validation
+      const tiktokRegex = /^(https?:\/\/)?(www\.)?tiktok\.com\/.+$/i;
+      const instagramRegex = /^(https?:\/\/)?(www\.)?instagram\.com\/.+$/i;
+      if (!tiktokRegex.test(url) && !instagramRegex.test(url)) {
+        videoMessage.textContent = 'Masukkan link TikTok atau Instagram yang valid.';
+        return;
+      }
+
+      videoMessage.textContent = 'Memproses unduhan video...';
+
+      try {
+        // Simulated delay
+        await new Promise((r) => setTimeout(r, 2500));
+
+        // Demo video URL (placeholder)
+        // Using a sample mp4 from placehold.co
+        const videoUrl =
+          'https://placehold.co/video/mp4/720x1280/ff4444/ffffff/placeholder-video.mp4';
+
+        videoPlayer.src = videoUrl;
+        videoDownloadLink.href = videoUrl;
+        videoDownloadLink.setAttribute('download', 'video.mp4');
+        videoPlayerContainer.classList.remove('hidden');
+        videoMessage.textContent = 'Video berhasil diproses. Silakan putar atau unduh.';
+      } catch (error) {
+        videoMessage.textContent =
+          'Terjadi kesalahan saat memproses video. Silakan coba lagi.';
+      }
+    });
+  </script>
+ </body>
+</html>
